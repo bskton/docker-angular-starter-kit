@@ -1,8 +1,8 @@
-FROM node:10.11.0
+FROM node:11.10.0
 
 RUN apt-get update && apt-get install -y curl xvfb chromium
 
-RUN npm i -g @angular/cli@6.2.3
+RUN npm i -g @angular/cli@7.3.3
 
 ADD xvfb-chromium /usr/bin/xvfb-chromium
 RUN ln -s /usr/bin/xvfb-chromium /usr/bin/google-chrome && \
