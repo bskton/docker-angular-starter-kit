@@ -10,6 +10,8 @@ if [ ! -f "angular.json" ]; then
   git add .
   git commit -m "Initial angular project commit"
   git remote rm origin
+else
+  npm install
 fi
 
 exec "$@"
